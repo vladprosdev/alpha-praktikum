@@ -1,0 +1,35 @@
+/* Fonts */
+
+/* Inter */
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../starter-code/assets/fonts/inter/static/Inter_18pt-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../starter-code/assets/fonts/inter/static/Inter_18pt-SemiBold.ttf);
+    font-weight: 600;
+}
+
+/* Martian Mono */
+
+@font-face {
+    font-family: 'Martian Mono';
+    src: url(../starter-code/assets/fonts/martian-mono/static/MartianMono-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Martian Mono';
+    src: url(../starter-code/assets/fonts/martian-mono/static/MartianMono-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Martian Mono';
+    src: url(../starter-code/assets/fonts/martian-mono/static/MartianMono-Bold.ttf);
+    font-weight: 700;
+}

@@ -1,0 +1,132 @@
+/* Fonts */
+
+/* Inter */
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url(../assets/fonts/inter/static/Inter_18pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter Semi Bold';
+    src: url(../assets/fonts/inter/static/Inter_18pt-SemiBold.ttf);
+}
+
+/* Martian Mono */
+
+@font-face {
+    font-family: 'Martian Mono Regular';
+    src: url(../assets/fonts/martian-mono/static/MartianMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Martian Mono Semi Bold';
+    src: url(../assets/fonts/martian-mono/static/MartianMono-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Martian Mono Bold';
+    src: url(../assets/fonts/martian-mono/static/MartianMono-Bold.ttf);
+}
+
+/* Tailwind */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    h1,
+    h2,
+    h3,
+    p {
+        max-width: 40ch;
+    }
+
+    button {
+        cursor: pointer;
+    }
+}
+
+@layer components {
+
+    .hover-button-light,
+    .hover-button-dark {
+        background-image: linear-gradient(90deg, #ffd3ba 0%, #FFF5EF 100%);
+        background-repeat: no-repeat;
+        background-position: -400px;
+        transition: background-position 0.3s ease;
+    }
+
+    .hover-button-dark {
+        background-image: linear-gradient(90deg, #ffffff40 0%, transparent 100%);
+    }
+
+    .hover-social {
+        transition: transform 0.5s ease;
+    }
+
+    .circle {
+        position: relative;
+    }
+
+    .circle::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -15px;
+        width: 130%;
+        aspect-ratio: 1 / 1;
+        background-image: url(../assets/images/pattern-circle.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .glow {
+        @apply relative overflow-clip z-10;
+    }
+
+    .glow::after {
+        content: '';
+        @apply bg-pattern-glow bg-no-repeat bg-cover absolute -bottom-72 -right-72 w-[70%] aspect-square -z-10;
+    }
+
+    .abo-glow {
+        @apply relative overflow-clip z-10;
+    }
+
+    .abo-glow::after {
+        content: '';
+        @apply bg-pattern-glow bg-no-repeat bg-cover absolute top-0 left-0 w-[200%] aspect-square -z-10;
+    }
+
+    .arrow {
+        @apply relative;
+    }
+
+    .arrow::before {
+        content: '';
+        @apply absolute bg-pattern-arrow bg-no-repeat inset-0 left-24;
+    }
+}
+
+/* Hover / Transition / Animation */
+
+.hover-button-light:hover,
+.hover-button-dark:hover {
+    @apply bg-[0];
+}
+
+.hover-button-light:focus {
+    @apply bg-[0] transition-none outline-1 outline-neutral-700 outline-offset-4;
+}
+
+.hover-button-dark:focus,
+.hover-social:focus {
+    @apply bg-[0] transition-none outline-1 outline-neutral outline-offset-4;
+}
+
+.hover-social:hover {
+    @apply -translate-y-2;
+}

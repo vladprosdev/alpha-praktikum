@@ -1,0 +1,426 @@
+/* Utility Classes */
+
+/* Fonts */
+
+.ff-fraunces {
+    font-family: var(--ff-fraunces);
+}
+
+.ff-manrope {
+    font-family: var(--ff-manrope);
+}
+
+/* Font Sizes */
+
+.fs-16 {
+    font-size: var(--fs-16);
+}
+
+.fs-18 {
+    font-size: var(--fs-18);
+}
+
+.fs-24 {
+    font-size: var(--fs-24);
+}
+
+.fs-32 {
+    font-size: var(--fs-32);
+}
+
+.fs-48 {
+    font-size: var(--fs-48);
+}
+
+.fs-56 {
+    font-size: var(--fs-56);
+}
+
+.fs-80 {
+    font-size: var(--fs-80);
+}
+
+/* Font Weights */
+
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+
+.fw-600 {
+    font-weight: var(--fw-600);
+}
+
+.fw-700 {
+    font-weight: var(--fw-700);
+}
+
+/* Line Heights */
+
+.lh-100 {
+    line-height: var(--lh-100);
+}
+
+.lh-120 {
+    line-height: var(--lh-120);
+}
+
+.lh-150 {
+    line-height: var(--lh-150);
+}
+
+.lh-180 {
+    line-height: var(--lh-180);
+}
+
+/* Background Colors */
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-purple-900 {
+    background-color: var(--purple-900);
+}
+
+.bg-purple-500 {
+    background-color: var(--purple-500);
+}
+
+.bg-purple-100 {
+    background-color: var(--purple-100);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+/* Text Colors */
+
+.txt-green {
+    color: var(--green);
+}
+
+.txt-purple-900 {
+    color: var(--purple-900);
+}
+
+.txt-purple-500 {
+    color: var(--purple-500);
+}
+
+.txt-purple-100 {
+    color: var(--purple-100);
+}
+
+.txt-white {
+    color: var(--white);
+}
+
+/* Padding */
+
+.p-8 {
+    padding: var(--spacing-8);
+}
+
+.p-12 {
+    padding: var(--spacing-12);
+}
+
+.p-16 {
+    padding: var(--spacing-16);
+}
+
+.p-20 {
+    padding: var(--spacing-20);
+}
+
+.p-28 {
+    padding: var(--spacing-28);
+}
+
+.p-32 {
+    padding: var(--spacing-32);
+}
+
+.p-40 {
+    padding: var(--spacing-40);
+}
+
+.p-44 {
+    padding: var(--spacing-44);
+}
+
+.p-56 {
+    padding: var(--spacing-56);
+}
+
+.p-64 {
+    padding: var(--spacing-64);
+}
+
+.p-80 {
+    padding: var(--spacing-80);
+}
+
+.p-88 {
+    padding: var(--spacing-88);
+}
+
+.p-112 {
+    padding: var(--spacing-112);
+}
+
+.p-128 {
+    padding: var(--spacing-128);
+}
+
+.p-144 {
+    padding: var(--spacing-144);
+}
+
+.p-168 {
+    padding: var(--spacing-168);
+}
+
+.p-296 {
+    padding: var(--spacing-296);
+}
+
+/* Margin */
+
+.m-8 {
+    margin: var(--spacing-8);
+}
+
+.m-12 {
+    margin: var(--spacing-12);
+}
+
+.m-16 {
+    margin: var(--spacing-16);
+}
+
+.m-20 {
+    margin: var(--spacing-20);
+}
+
+.m-28 {
+    margin: var(--spacing-28);
+}
+
+.m-32 {
+    margin: var(--spacing-32);
+}
+
+.m-40 {
+    margin: var(--spacing-40);
+}
+
+.m-44 {
+    margin: var(--spacing-44);
+}
+
+.m-56 {
+    margin: var(--spacing-56);
+}
+
+.m-64 {
+    margin: var(--spacing-64);
+}
+
+.m-80 {
+    margin: var(--spacing-80);
+}
+
+.m-88 {
+    margin: var(--spacing-88);
+}
+
+.m-112 {
+    margin: var(--spacing-112);
+}
+
+.m-128 {
+    margin: var(--spacing-128);
+}
+
+.m-144 {
+    margin: var(--spacing-144);
+}
+
+.m-168 {
+    margin: var(--spacing-168);
+}
+
+.m-296 {
+    margin: var(--spacing-296);
+}
+
+/* Flexbox Properties */
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.flex-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+/* Align Items */
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+/* Align Self */
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+/* Text Align */
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+/* Width */
+
+.w-100 {
+    width: 100%;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-33 {
+    width: 33.33%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+/* Height */
+
+.h-100 {
+    height: 100%;
+}
+
+.h-75 {
+    height: 75%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-33 {
+    height: 33.33%;
+}
+
+.h-25 {
+    height: 25%;
+}
+
+/* Max Width */
+
+.max-w-100 {
+    max-width: 100%;
+}
+
+.max-w-50 {
+    max-width: 50%;
+}
+
+.max-w-33 {
+    max-width: 33.33%;
+}
+
+.max-w-25 {
+    max-width: 25%;
+}
+
+/* Max Height */
+
+.max-h-100 {
+    max-height: 100%;
+}
+
+.max-h-50 {
+    max-height: 50%;
+}
+
+.max-h-33 {
+    max-height: 33.33%;
+}
+
+.max-h-25 {
+    max-height: 25%;
+}

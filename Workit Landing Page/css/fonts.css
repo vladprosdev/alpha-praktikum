@@ -1,0 +1,14 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url(../starter-code/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url(../starter-code/assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+    font-weight: 400 700;
+}

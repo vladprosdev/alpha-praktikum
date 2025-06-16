@@ -1,0 +1,17 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Oi';
+    src: url(./fonts/Oi/Oi-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Funnel Sans';
+    src: url(./fonts/Funnel-Sans/FunnelSans-VariableFont_wght.ttf);
+}
+
+/* Tailwind */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

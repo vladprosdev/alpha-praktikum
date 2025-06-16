@@ -1,0 +1,44 @@
+/* Font */
+
+@font-face {
+    font-family: "Rubik";
+    src: url(../assets/fonts/rubik/Rubik-VariableFont_wght.ttf);
+}
+
+/* Tailwind */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    button {
+        @apply cursor-pointer min-w-3 min-h-3;
+    }
+
+    input[type="radio"] {
+        @apply relative flex justify-center items-center;
+    }
+
+    input[type="radio"]:checked:before {
+        @apply content-[''] absolute bg-clr-white w-2 aspect-square rounded-[inherit];
+    }
+
+    /* input[type="text"]::placeholder {
+        @apply text-fs-placeholder font-fw-400 text-clr-placeholder;
+    } */
+}
+
+@layer components {
+    body:before {
+        @apply content-[''] absolute w-[31.875rem] h-[63.625rem] top-0 left-0 bg-gradient-to-bl from-clr-gradient-1 to-clr-gradient-2 rounded-full -z-10 -translate-x-[60%] -translate-y-1/2;
+    }
+
+    body:after {
+        @apply content-[''] absolute w-[31.875rem] h-[63.625rem] bottom-0 right-0 bg-gradient-to-bl from-clr-gradient-1 to-clr-gradient-2 rounded-full -z-10 opacity-10 translate-x-[65%] translate-y-1/2;
+    }
+
+    .phone::before {
+        @apply content-[''] absolute top-0 left-[3.6875rem] bg-clr-white w-[8.0625rem] h-[1.8125rem] rounded-b-xl;
+    }
+}

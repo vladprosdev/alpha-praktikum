@@ -1,0 +1,86 @@
+/* Utility Classes - FFs */
+
+.txt-5,
+.txt-5-semibold {
+    font-family: 'Inter';
+}
+
+.txt-1,
+.txt-2,
+.txt-3,
+.txt-3-mobile,
+.txt-4,
+.txt-4-regular,
+.txt-6,
+.txt-7 {
+    font-family: 'Martian Mono';
+}
+
+/* Utility Classes - Text Presets */
+
+.txt-1 {
+    font-size: clamp(38px, 7vw, 62px);
+    line-height: 120%;
+    letter-spacing: -2px;
+    font-weight: 700;
+}
+
+.txt-2 {
+    font-size: clamp(34px, 7vw, 50px);
+    line-height: 125%;
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+
+.txt-3 {
+    font-size: clamp(24px, 5vw, 34px);
+    line-height: 120%;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+.txt-3-mobile {
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+.txt-4 {
+    font-weight: 600;
+}
+
+.txt-4,
+.txt-4-regular {
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: -1px;
+}
+
+.txt-5-semibold {
+    font-weight: 600;
+}
+
+.txt-5,
+.txt-5-semibold {
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+}
+
+.txt-6 {
+    font-size: clamp(16px, 2vw, 18px);
+    line-height: 130%;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+.txt-7 {
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -1px;
+}
+
+.no-wrap {
+    white-space: normal;
+}

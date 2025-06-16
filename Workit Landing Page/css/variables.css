@@ -1,0 +1,63 @@
+/* Variables */
+
+:root {
+
+    /* Colors */
+
+    --green: hsl(150, 100%, 63%);
+    --purple-900: hsl(273, 85%, 13%);
+    --purple-500: hsl(271, 12%, 34%);
+    --purple-100: hsl(276, 100%, 99%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Fonts */
+
+    --ff-fraunces: 'Fraunces';
+    --ff-manrope: 'Manrope';
+
+    /* Font Sizes */
+
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-24: 1.5rem;
+    --fs-32: 2rem;
+    --fs-48: 3rem;
+    --fs-56: 3.5rem;
+    --fs-60: 3.75rem;
+    --fs-80: 5rem;
+
+    /* Font Weights */
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    /* Line Heights */
+
+    --lh-100: 1;
+    --lh-120: 1.2;
+    --lh-150: 1.5;
+    --lh-180: 1.8;
+
+    /* Spacing */
+
+    --spacing-8: 0.5rem;
+    --spacing-12: 0.75rem;
+    --spacing-16: 1rem;
+    --spacing-20: 1.25rem;
+    --spacing-24: 1.5rem;
+    --spacing-28: 1.75rem;
+    --spacing-32: 2rem;
+    --spacing-40: 2.5rem;
+    --spacing-44: 2.75rem;
+    --spacing-56: 3.5rem;
+    --spacing-64: 4rem;
+    --spacing-80: 5rem;
+    --spacing-88: 5.5rem;
+    --spacing-112: 7rem;
+    --spacing-128: 8rem;
+    --spacing-144: 9rem;
+    --spacing-168: 10.5rem;
+    --spacing-296: 18.5rem;
+}

@@ -1,0 +1,620 @@
+/* Import */
+
+@import url(fonts.css);
+@import url(variables.css);
+@import url(ut-classes.css);
+@import url(elements-classes.css);
+@import url(hover-transition-animation.css);
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+/* General Styles */
+
+html {
+    font-family: 'Inter', sans-serif;
+    color: var(--neutral-700);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background-color: var(--neutral-0);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header */
+
+.header {
+    background-color: var(--neutral-100);
+    margin-block-end: var(--spacing-48);
+}
+
+.logo-container {
+    width: 200px;
+}
+
+
+/* Hero */
+
+.hero-section {
+    background-color: var(--neutral-100);
+    background-image: url(../starter-code/assets/images/pattern-light-bg.svg);
+    padding-block: var(--spacing-32) var(--spacing-80);
+}
+
+.hero-section>* {
+    position: relative;
+}
+
+.hero-section::before {
+    content: url(../starter-code/assets/images/pattern-glow.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 430px;
+    height: 430px;
+    filter: saturate(1.5);
+}
+
+.hero-title {
+    background: var(--text-gradient);
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-description {
+    margin-block-end: var(--spacing-32);
+}
+
+.membership-options-button {
+    width: clamp(200px, 100%, 350px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-container {
+    text-align: left;
+    display: grid;
+    align-items: center;
+    grid-template-columns: min-content;
+    grid-template-areas: "avatars stars""avatars text";
+    column-gap: var(--spacing-12);
+    margin-block-end: var(--spacing-64);
+}
+
+.avatars-container {
+    grid-area: avatars;
+    width: 110px;
+}
+
+/* Read Together Section */
+
+.read-together-section {
+    background-color: var(--neutral-0);
+    padding-inline: var(--spacing-16);
+    margin-block-end: var(--spacing-64);
+}
+
+.benefits-list {
+    margin-block-end: var(--spacing-40);
+}
+
+.benefits-list li::before {
+    content: url("../starter-code/assets/images/icon-check.svg");
+    width: 28px;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    left: var(--spacing-16);
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    padding-left: var(--spacing-48);
+}
+
+.benefits-list li:not(:last-child) {
+    margin-block-end: var(--spacing-16);
+}
+
+.pattern-circle {
+    position: relative;
+    display: inline-block;
+}
+
+.pattern-circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15%;
+    width: 130%;
+    aspect-ratio: 1 / 1;
+    background-image: url(../starter-code/assets/images/pattern-circle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Not Average Section */
+
+.not-average-section {
+    background-color: var(--neutral-0);
+    padding-inline: var(--spacing-16);
+}
+
+.not-average-description {
+    margin-block-end: var(--spacing-40);
+}
+
+/* Your Journey Section */
+
+.your-journey-section {
+    background-color: var(--neutral-100);
+    background-image: url(../starter-code/assets/images/pattern-light-bg.svg);
+    color: var(--neutral-900);
+    padding-block: var(--spacing-40);
+    margin-inline: var(--spacing-16);
+    border-radius: var(--border-radius-8);
+    position: relative;
+}
+
+.your-journey-section::before {
+    content: url(../starter-code/assets/images/pattern-glow.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 530px;
+    height: 530px;
+    filter: saturate(1.5);
+}
+
+.journey-step-container {
+    position: relative;
+    max-width: 270px;
+}
+
+.your-journey-title {
+    margin-block-end: var(--spacing-48);
+}
+
+.number-box {
+    width: 35px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--neutral-900);
+    border-radius: var(--border-radius-4);
+    margin-block-end: var(--spacing-20);
+}
+
+ol {
+    counter-reset: section;
+
+    li {
+        display: block;
+    }
+
+    li::before {
+        content: counter(section);
+        counter-increment: section;
+        padding: 8px 13px;
+        border: 3px solid var(--neutral-900);
+        border-radius: var(--border-radius-4);
+    }
+}
+
+.journey-step-description {
+    margin-block: var(--spacing-32) var(--spacing-48);
+}
+
+/* Membership Section */
+
+.membership-section {
+    display: grid;
+    grid-template-areas: "title""starter""pro""custom";
+}
+
+.membership-title {
+    grid-area: title;
+}
+
+.abo-container {
+    padding: var(--spacing-24);
+    border: 1px solid var(--neutral-200);
+    border-radius: var(--border-radius-8);
+}
+
+#StarterAbo {
+    grid-area: starter;
+}
+
+#ProAbo::before {
+    content: url(../starter-code/assets/images/pattern-glow.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 430px;
+    height: 430px;
+    filter: saturate(1.5);
+}
+
+#ProAbo {
+    grid-area: pro;
+    background-color: var(--neutral-100);
+    position: relative;
+    overflow: clip;
+}
+
+#CustomAbo {
+    grid-area: custom;
+}
+
+.abo-container:not(:last-child) {
+    margin-block-end: var(--spacing-24);
+}
+
+.plan-title,
+.price-container {
+    margin-bottom: var(--spacing-24);
+}
+
+.plan-title,
+.abo-price {
+    color: var(--neutral-900);
+}
+
+.abo-price {
+    font-size: 34px;
+}
+
+.features-list {
+    margin-block: var(--spacing-24) var(--spacing-32);
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.feature-item:first-child {
+    margin-block-end: var(--spacing-16);
+}
+
+.feature-item::before {
+    content: url(../starter-code/assets/images/icon-check.svg);
+    width: 28px;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    margin-right: var(--spacing-16);
+}
+
+.abo-button {
+    width: 100%;
+}
+
+/* One Review Section */
+
+.one-review-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.one-review-section .stars-container {
+    width: 180px;
+    gap: var(--spacing-4);
+}
+
+.quoted-review {
+    color: var(--neutral-900);
+    margin-block: var(--spacing-32);
+}
+
+/* Ready To Debug Section */
+
+.ready-to-debug-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--neutral-0);
+    background-color: var(--neutral-900);
+    padding-block: var(--spacing-48) var(--spacing-64);
+    border-radius: var(--border-radius-16) var(--border-radius-16) 0 0;
+    margin-block-end: 0;
+}
+
+.ready-to-debug-title {
+    color: var(--neutral-0);
+    margin-block-end: var(--spacing-40);
+}
+
+.ready-to-debug-section .review-container {
+    margin: 0;
+}
+
+/* Footer Section */
+
+.last-divider {
+    background-color: var(--neutral-700);
+}
+
+.footer-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-16);
+    color: var(--neutral-0);
+    background-color: var(--neutral-900);
+    padding-block: var(--spacing-24);
+    margin: 0;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-20);
+}
+
+
+/* Media Queries */
+
+@media (width > 760px) {
+    .section-img-container {
+        border-radius: var(--border-radius-24);
+    }
+
+    .no-wrap {
+        white-space: nowrap;
+    }
+
+    .section {
+        padding-inline: var(--spacing-32);
+    }
+
+    .hero-section {
+        padding-block-start: var(--spacing-32);
+    }
+
+    .read-together-title {
+        margin-block-end: var(--spacing-32);
+    }
+
+    .membership-options-button {
+        width: clamp(380px, 100%, 390px);
+    }
+
+    .benefits-list li::before {
+        left: var(--spacing-32);
+    }
+
+    .benefits-list li:not(:last-child) {
+        margin-block-end: var(--spacing-24);
+    }
+
+    .img-not-average-container::after {
+        content: url(../starter-code/assets/images/logos-tech.svg);
+        position: absolute;
+        bottom: 3rem;
+        right: 3.5rem;
+    }
+
+    .your-journey-section {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        justify-items: center;
+        margin-inline: var(--spacing-32);
+    }
+
+    .journey-step-container {
+        margin-bottom: var(--spacing-64);
+    }
+
+    .journey-step-container {
+        position: relative;
+        max-width: 100%;
+    }
+
+    .membership-section {
+        grid-template-areas: "title title""starter pro""custom 0";
+        column-gap: var(--spacing-24);
+    }
+
+    .membership-title {
+        margin-block-end: var(--spacing-40);
+    }
+
+    .footer-section {
+        flex-flow: row nowrap;
+    }
+
+}
+
+@media (width > 950px) {
+    .section {
+        max-width: 1300px;
+        margin-inline: auto;
+        grid-template-columns: 1fr 1fr;
+        padding-inline: var(--spacing-100);
+        column-gap: var(--spacing-64);
+        margin-block-end: var(--spacing-120);
+        align-items: center;
+    }
+
+    .hero-section {
+        max-width: 100vw;
+        grid-template-areas: "header header""hero-content hero-img";
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .hero-section .section-content {
+        grid-area: hero-content;
+    }
+
+    .img-hero-container {
+        grid-area: hero-img;
+        max-width: 680px;
+        max-height: 680px;
+        justify-self: center;
+    }
+
+    .read-together-section {
+        grid-template-areas: "img-read-together read-together-content";
+    }
+
+    .img-read-together-container {
+        grid-area: img-read-together;
+    }
+
+    .read-together-section .section-content {
+        grid-area: read-together-content;
+    }
+
+    .benefits-list li::before {
+        position: relative;
+        left: 0;
+        margin-right: 29px;
+    }
+
+    .benefits-list li {
+        padding: 0;
+    }
+
+    .not-average-section {
+        grid-template-areas: "not-average-content not-average-img";
+    }
+
+    .not-average-section .section-content {
+        grid-area: not-average-content;
+    }
+
+    .img-not-average-container {
+        grid-area: not-average-img;
+    }
+
+    .img-not-average-container::after {
+        bottom: 2%;
+        right: clamp(14rem, 40%, 47vw);
+    }
+
+    .your-journey-section {
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        padding-inline: var(--spacing-64);
+        margin-inline: var(--spacing-100);
+        margin-inline: auto;
+    }
+
+    .your-journey-title {
+        max-width: 500px;
+        grid-area: your-journey-title;
+    }
+
+    .journey-list {
+        position: relative;
+        text-align: left;
+        grid-area: journey-list;
+        display: flex;
+        gap: var(--spacing-40);
+        margin-block-start: var(--spacing-40);
+    }
+
+    .journey-step-container:not(:last-child):after {
+        content: '';
+        background-image: url(../starter-code/assets/images/pattern-arrow.svg);
+        width: 80px;
+        height: 33px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .journey-step-container {
+        max-width: 250px;
+        margin-bottom: 0;
+    }
+
+    .membership-section {
+        max-width: 1300px;
+        margin-inline: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr min-content;
+        grid-template-areas: "title title title""starter pro custom";
+        gap: var(--spacing-32);
+    }
+
+    #ProAbo {
+        transform: scaleX(1.05) scaleY(1.1);
+    }
+
+    #CustomAbo {
+        margin-block-end: var(--spacing-24);
+    }
+
+    .membership-title {
+        justify-self: center;
+        margin-block-end: var(--spacing-64);
+    }
+
+    .one-review-section {
+        text-align: center;
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+
+    .ready-to-debug-title {
+        max-width: 650px;
+    }
+
+    .ready-to-debug-section,
+    .footer-section {
+        margin-block-end: 0;
+        width: 100vw;
+        max-width: 100vw;
+    }
+}
