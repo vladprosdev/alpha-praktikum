@@ -779,6 +779,10 @@ body:after {
   overflow: clip;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
